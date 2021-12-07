@@ -1,4 +1,4 @@
-package com.mayocca.clases;
+package com.mayocca.classes;
 
 import java.io.Serializable;
 

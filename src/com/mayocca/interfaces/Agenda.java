@@ -1,6 +1,6 @@
 package com.mayocca.interfaces;
 
-import com.mayocca.clases.Contact;
+import com.mayocca.classes.Contact;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

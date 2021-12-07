@@ -1,5 +1,6 @@
-package com.mayocca.clases;
+package com.mayocca.client;
 
+import com.mayocca.classes.Contact;
 import com.mayocca.interfaces.Agenda;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
