@@ -1,12 +1,10 @@
-package com.mayocca.interfaces;
-
-import com.mayocca.classes.Contact;
+package com.mayocca.contactbook.client;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-public interface Agenda extends Remote {
+public interface ContactBook extends Remote {
 
     public ArrayList<Contact> getContacts() throws RemoteException;
 

@@ -1,4 +1,4 @@
-package com.mayocca.classes;
+package com.mayocca.contactbook.client;
 
 import java.io.Serializable;
 

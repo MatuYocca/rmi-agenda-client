@@ -1,13 +1,11 @@
-package com.mayocca.client;
+package com.mayocca.contactbook.client;
 
-import com.mayocca.classes.Contact;
-import com.mayocca.interfaces.Agenda;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.rmi.Naming;
 import java.util.ArrayList;
 
-public class ClientMain {
+public class Client {
 
     public static void main(String[] args) {
 
@@ -19,7 +17,7 @@ public class ClientMain {
         }
 
         try {
-            Agenda agenda = (Agenda) Naming.lookup("rmi://localhost:1099/agendaserver");
+            ContactBook agenda = (ContactBook) Naming.lookup("rmi://localhost:1099/agendaserver");
 
             int op;
 
@@ -45,7 +43,7 @@ public class ClientMain {
                     case 1:
                         System.out.println("Nombre\tApellido\tNumero\n---");
                         for (Contact c : agenda.getContacts()) {
-                            //for (int i = 0; i < agenda.getContacts().size(); ++i) {
+                            // for (int i = 0; i < agenda.getContacts().size(); ++i) {
 
                             System.out.print(c.nombre + '\t');
                             System.out.print(c.apellido + '\t');
@@ -63,7 +61,7 @@ public class ClientMain {
                         }
                         System.out.println("ENTER para continuar...");
                         input.readLine();
-                        //System.out.print("\n\n\n\n\n\n\n\n\n\n");
+                        // System.out.print("\n\n\n\n\n\n\n\n\n\n");
                         break;
                     case 3:
                         System.out.print("Nombre> ");
@@ -77,7 +75,7 @@ public class ClientMain {
                         System.out.println("Contacto agregado.");
                         System.out.println("ENTER para continuar...");
                         input.readLine();
-                        //System.out.print("\n\n\n\n\n\n\n\n\n\n");
+                        // System.out.print("\n\n\n\n\n\n\n\n\n\n");
                         break;
                     case 4:
                         agenda.clearContacts();
