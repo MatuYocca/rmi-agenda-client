@@ -1,3 +1,3 @@
-# Agenda RMI (Servidor)
+# RMI Contact Book Server
 
-Implementacion de agenda simple con almacenamiento volátil utilizando RMI entre una instancia de cliente y servidor en Java.
+Simple contact book implementation using RMI.
